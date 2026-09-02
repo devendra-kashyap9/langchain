@@ -1,0 +1,38 @@
+[project]
+name = "agentic-ai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "devendra-kashyap9", email = "dkashyap099@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "ddgs>=9.15.0",
+    "ipykernel>=7.3.0",
+    "langchain>=1.3.17",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.6.0",
+    "langchain-openai>=1.6.0",
+    "openai>=3.3.1",
+    "wikipedia>=1.4.0",
+    "pypdf",
+    "beautifulsoup4>=4.15.0",
+    "requests>=2.34.2",
+    "arxiv",
+    "pymupdf>=1.28.2",
+    "langchain-text-splitters>=1.1.2",
+    "python-dotenv>=1.2.3",
+    "chromadb>=1.5.9",
+    "sentence-transformers>=6.0.1",
+    "langchain-huggingface>=1.2.2",
+    "faiss-cpu>=1.15.0",
+    "langchain-chroma>=1.1.0",
+]
+
+[project.scripts]
+agentic-ai = "agentic_ai:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
